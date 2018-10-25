@@ -1,0 +1,58 @@
+/*Selector{
+	Property : Value;
+}*/
+html { 
+  background: url(header.jpg) no-repeat center center fixed; 
+  background-size: cover;
+  height: 100%;
+}
+body{
+	background: url(header.jpg)no-repeat center center fixed;
+    height: 100%;
+}
+img {   
+    max-width: 100%;
+}
+p {
+    color: white;
+    position: absolute;
+    top: 275px;
+    left: 320px;
+    font-size: 2em;
+    font-family: 'Montserrat', regular;
+}
+
+/*effect-underline*/
+p:after {
+	content: '';
+  position: absolute;
+  left: 0;
+  display: inline-block;
+  height: 1em;
+  width: 100%;
+  border-bottom: 1px solid;
+  margin-top: 10px;
+  opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: scale(0,1);
+	transform: scale(0,1);
+}
+
+p:hover:after {
+  opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+.btn {
+    display: inline;
+     position: absolute;
+    top: 275px;
+    left: 305px;
+}
+
+
+
+
+
